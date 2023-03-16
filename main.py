@@ -288,12 +288,12 @@ def main():
     os.system("cls")
 
     if ans != None:
-        print(f"{N}{B}Stored Answer: {ans}{UB}")
+        print(f"{N}{B}Stored Answer: {ans}{UB}{N}")
 
     if main_err == True:
         print(f"{N}Please enter a valid operation.")
 
-    print(f"{N}{B}Please select an operation:{UB}{N}    Addition (+){N}    Subtraction (-){N}    Multiplication (*){N}    Division (/){N}    Exponent (^){N}    Factorial (!){N}{B}Or quit (q) to exit.{UB}")
+    print(f"{B}Please select an operation:{UB}{N}    Addition (+){N}    Subtraction (-){N}    Multiplication (*){N}    Division (/){N}    Exponent (^){N}    Factorial (!){N}{B}Or quit (q) to exit.{UB}")
     
     op = input(f"Your choice is: {B}")
     if op.lower() == "addition" or op.lower() == "+": add()
